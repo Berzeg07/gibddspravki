@@ -29,7 +29,8 @@
                     .cards-gallery__item
                         .cards-gallery__top
                             .cards-gallery__column
-                                img(src="img/audi.png")
+                                .cards-gallery__img
+                                    img(src="img/audi.png")
                             .cards-gallery__column
                                 .cards-gallery__title Справка для ГИБДД (форма 003/ву) для категории А, В + нарколог и психиатр
 
@@ -44,12 +45,12 @@
                                     li
                                         .card-info__article Время оформления
                                         .card-info__price.card-info__blue
-                                            span.card-info__txt от
-                                            b 15
+                                            span.card-info__txt от 
+                                            b 15 
                                             span.card-info__txt мин
                                     li
                                         .card-info__article Срок действия
-                                        .card-info__price.card-info__green 
+                                        .card-info__price.card-info__blue
                                             b 12 
                                             span.card-info__txt мес
 
@@ -75,13 +76,17 @@
                                             img(src="img/doc-4.png" width="80" height="80")
                                         .doc-list__article Психиатр
 
-                            button(type="button").cards-gallery__btn Записаться на медкомиссию со скидкой
+                            .cards-gallery__btn-wrap
+                                button(type="button").btn.cards-gallery__btn 
+                                    |Записаться на медкомиссию 
+                                    span со скидкой
 
                 .swiper-slide 
                     .cards-gallery__item
                         .cards-gallery__top
                             .cards-gallery__column
-                                img(src="img/audi.png")
+                                .cards-gallery__img
+                                    img(src="img/kamaz.png")
                             .cards-gallery__column
                                 .cards-gallery__title Справка для ГИБДД для категории С, D, E с электроэнцефалограммой + нарколог и психиатр
 
@@ -96,12 +101,12 @@
                                     li
                                         .card-info__article Время оформления
                                         .card-info__price.card-info__blue
-                                            span.card-info__txt от
-                                            b 30
+                                            span.card-info__txt от 
+                                            b 30 
                                             span.card-info__txt мин
                                     li
                                         .card-info__article Срок действия
-                                        .card-info__price.card-info__green 
+                                        .card-info__price.card-info__blue
                                             b 12 
                                             span.card-info__txt мес
 
@@ -131,12 +136,15 @@
                                             img(src="img/doc-5.png" width="80" height="80")
                                         .doc-list__article Отоларинголог
 
-                            button(type="button").cards-gallery__btn Записаться на медкомиссию со скидкой
+                            .cards-gallery__btn-wrap
+                                button(type="button").btn.cards-gallery__btn 
+                                    |Записаться на медкомиссию 
+                                    span со скидкой
 
             .swiper-pagination
 
-        .swiper-button-next
-        .swiper-button-prev
+        .swiper-button-next.cards-wrap__next
+        .swiper-button-prev.cards-wrap__prev
 
 .advantages
     h2.cont-title  Преимущества наших медцентров
