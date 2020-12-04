@@ -1,1 +1,125 @@
-p Шапка
+.header
+    .header__left
+        .logo
+            .logo__img
+                img(src="img/logo.png")
+            ul.logo__article
+                li Гибдд
+                li Мед справки
+
+    .header__right
+        .header__top
+            .header__column
+                .fillials
+                    .fillials__icon
+                        img(src="img/pin.png" width="20" height="20")
+                    .fillials__article 28 филиалов в Москве
+
+            .header__column
+                ul.main-menu
+                    li
+                        a(href="#") О компании
+                    li
+                        a(href="#") Услуги
+                    li
+                        a(href="#") Цены
+                    li
+                        a(href="#") Лицензии
+                    li
+                        a(href="#") Контакты
+
+            .header__column
+                .worktime
+                    .worktime__icon 
+                        img(src="img/calendar.png" width="30" height="30")
+                    .worktime__article Пн-Пт: с 9:00 до 21:00  Сб-Вс: с 10:00 до 20:00
+
+            .header__column
+                .recal
+                    .recal__left
+                        img(src="img/whatsapp.png" width="30" height="30")
+                    .recal__right
+                        a(href="tel:74957206037").recal__num +7 (495) 720-60-37
+                        .recal__article Телефон для записи на прием
+
+
+        .header__bottom
+            .header__column
+                .gerb 
+                    .gerb__icon 
+                        img(src="img/gerb.png" width="60" height="58") 
+                    .gerb__article Лицензия на проведение<br> водительских медкомиссий
+
+            .header__column
+                ul.header__links
+                    li
+                        a(href="#") Справка для ГИБДД для категории А, В
+                    li
+                        a(href="#") Справка водительская для категории С, D, E
+                    li
+                        a(href="#") Заключение нарколога и психиатра
+
+.headermob
+    .headermob__top
+        .headermob__logo 
+            img(src="img/logo.png" width="46" height="46")
+
+        ul.headermob__title
+            li Гибдд
+            li Мед справки
+
+        a(href="tel:74957206037").headermob__recal
+            img(src="img/phone-call.png" width="34" height="34")
+
+    .headermob__bottom
+        .fillials
+            .fillials__icon
+                img(src="img/pin.png" width="20" height="20")
+            .fillials__article 28 филиалов в Москве
+
+        button(type="button").burger
+
+.dropdown
+    .dropdown__title Медсправки для водителей
+
+    ul.navlist
+        li
+            .navlist__icon
+                img(src="img/icon-1.png" width="32" height="32")
+
+            a(href="#") Справка для категорий А, В, (003-в/у)
+        li
+            .navlist__icon
+                img(src="img/icon-2.png" width="32" height="32")
+
+            a(href="#") Справка для категорий С, D (003-в/у)
+        li
+            .navlist__icon
+                img(src="img/icon-3.png" width="32" height="32")
+
+            a(href="#") Электроэнцефалограмма головного мозга
+        li
+            .navlist__icon
+                img(src="img/icon-4.png" width="32" height="32")
+
+            a(href="#") Заключение нарколога и психиатра
+
+    .dropdown__title Информация
+
+    ul.nav-links.dropdown__links
+        li
+            a(href="#") О компании
+        li
+            a(href="#") Услуги
+        li
+            a(href="#") Контакты
+        li
+            a(href="#") Лицензии
+        li
+            a(href="#") Цены
+
+    .dropdown__bottom
+        a(href="tel:74957206037").dropdown__phone +7 (495) 720-60-37
+        .dropdown__phone-article Телефон для записи на прием
+
+        button(type="button").btn Записаться на медкомиссию
