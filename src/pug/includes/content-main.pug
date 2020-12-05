@@ -281,7 +281,8 @@
     .sertificat 
         .sertificat__item
             img(src="img/blank.png" width="250" height="350")
-            .sertificat__article Скидка 10%
+            .sertificat__article 
+                span Скидка 10%
 
     .formblock__item
         .formblock__column
@@ -309,11 +310,13 @@
 
                 ul.formloan__bottom
                     li
-                        button(type="button").btn.formloan__btn Записаться на медкомиссию со скидкой
+                        button(type="submit").btn.formloan__btn 
+                            |Записаться на медкомиссию 
+                            span со скидкой
                     li
                         .checkblock
-                            input(type="checkbox").inpcheck#checkbox
-                            label(for="checkbox")
+                            input(type="checkbox" checked).inpcheck#checkbox
+                            label(for="checkbox").checkblock__label
                                 |Я принимаю условия 
                                 a(href="#") передачи информации
 
