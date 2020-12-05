@@ -430,6 +430,14 @@
 
 .content-top {
     background: linear-gradient(180deg, #DFF0F5 0%, rgba(223, 240, 245, 0) 100%);
+
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-bottom: 36px;
+    }
 }
 
 .cont-top__title {
@@ -1472,5 +1480,128 @@
 
     a {
         font-size: 16px;
+    }
+}
+
+.adv-gallery__wrap {
+    position: relative;
+
+    @media (min-width: 768px) {
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-bottom: 52px;
+    }
+
+    .adv-prev,
+    .adv-next {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.adv-gallery {
+    padding-bottom: 50px;
+
+    @media (min-width: 768px) {
+        padding-top: 25px;
+    }
+
+    .swiper-wrapper {
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.adv-gallery__article {
+    color: #2B3F64;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.adv-gallery__item {
+    width: 260px;
+    text-align: center;
+}
+
+.adv-gallery__title {
+    color: #0BA097;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+        font-size: 16px;
+    }
+}
+
+.cont-list {
+    padding-top: 25px;
+
+    @media (min-width: 1280px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    li {
+        margin-bottom: 26px;
+        position: relative;
+        padding-left: 21px;
+
+        @media (min-width: 1280px) {
+            width: 30%;
+        }
+
+        @media (min-width: 1900px) {
+            width: 33%;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 10em;
+            background: #FF5B62;
+        }
+    }
+}
+
+.exceptions {
+    margin-bottom: 40px;
+}
+
+.exception-list {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 1280px) {
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+
+    li {
+        color: #2B3F64;
+        font-size: 18px;
+        margin-bottom: 25px;
+
+        @media (min-width: 768px) {
+            margin-right: 15px;
+        }
     }
 }
